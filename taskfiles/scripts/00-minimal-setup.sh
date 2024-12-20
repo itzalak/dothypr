@@ -5,32 +5,32 @@ set -uo pipefail
 # Minimal installation for dotfiles setup
 
 PKGS=(
-  # Apps
-  alacritty
-  bat
-  curl
-  fd
-  firefox
-  fzf
-  git
-  go-task
-  man-db
-  man-pages
-  neovim
-  openssh
-  ranger
-  ripgrep
-  starship
-  stow
-  wget
-  wezterm
-  xclip
-  zsh
+	# Apps
+	alacritty
+	bat
+	curl
+	fd
+	firefox
+	fzf
+	git
+	go-task
+	man-db
+	man-pages
+	neovim
+	openssh
+	ranger
+	ripgrep
+	starship
+	stow
+	wget
+	wezterm
+	xclip
+	zsh
 )
 
 for PKG in "${PKGS[@]}"; do
-  echo "INSTALLING PACKAGE: $PKG"
-  sudo pacman -S "$PKG" --noconfirm --needed
+	echo "INSTALLING PACKAGE: $PKG"
+	sudo pacman -S "$PKG" --noconfirm --needed
 done
 
 # In linux, task is called go-task, to allow it to run normally is necessary to create a symlink.

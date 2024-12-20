@@ -1,8 +1,8 @@
 version: '3'
 
 includes:
-  submodules: ./taskfiles/taskfile.submodules.yml
-  neovim: ./taskfiles/taskfile.neovim.yml
+  submodule_neovim: ./taskfiles/taskfile.submodule.neovim.yml
+  neovim: ./taskfiles/taskfile.neovim.yaml
 
 tasks:
 

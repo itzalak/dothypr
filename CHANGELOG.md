@@ -1,3 +1,18 @@
+## v0.1.4 (2024-12-21)
+
+### Changed
+
+- introduce yay
+- monitor config and hyprpaper
+- first steps into hyprland and waybar
+- Add desktop installation
+- Add wireless installation
+- Add bluetooth installation
+
+### Fixed
+
+- remove font manager, it kills hyprland
+
 ## v0.1.3 (2024-12-21)
 
 ### Changed

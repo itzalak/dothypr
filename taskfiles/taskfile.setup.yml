@@ -33,3 +33,12 @@ tasks:
         vars:
           REQUIRED_TOOLS: pacman
       - "{{.ROOT_DIR}}/taskfiles/scripts/00-minimal-setup.sh"
+
+  bluetooth:
+    desc: Install bluetooth
+    platforms: [linux]
+    cmds:
+      - task: assert
+        vars:
+          REQUIRED_TOOLS: pacman
+      - "{{.ROOT_DIR}}/taskfiles/scripts/02-bt.sh"

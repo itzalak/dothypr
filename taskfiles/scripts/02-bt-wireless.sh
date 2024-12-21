@@ -7,6 +7,9 @@ PKGS=(
   bluez
   bluez-utils
   bluez-hid2hci
+  # https://wiki.archlinux.org/title/Iwd
+  iwd
+  impala
 )
 
 echo "Installing wireless and bluetooth related packages"

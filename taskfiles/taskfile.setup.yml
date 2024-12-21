@@ -35,10 +35,10 @@ tasks:
       - "{{.ROOT_DIR}}/taskfiles/scripts/00-minimal-setup.sh"
 
   bluetooth:
-    desc: Install bluetooth
+    desc: Install bluetooth and wireless packages
     platforms: [linux]
     cmds:
       - task: assert
         vars:
           REQUIRED_TOOLS: pacman
-      - "{{.ROOT_DIR}}/taskfiles/scripts/02-bt.sh"
+      - "{{.ROOT_DIR}}/taskfiles/scripts/02-bt-wireless.sh"

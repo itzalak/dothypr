@@ -11,7 +11,6 @@ PKGS=(
   ttf-iosevkaterm-nerd
   ttf-nerd-fonts-symbols
   ttf-zed-mono-nerd
-  font-manager
 )
 
 echo "Installing fonts"

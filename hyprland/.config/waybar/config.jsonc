@@ -27,6 +27,9 @@
     "hyprland/submap": {
         "format": "<span style=\"italic\">{}</span>"
     },
+    "hyprland/window": {
+        "separate-outputs": true
+    },
     "wireplumber": {
         "format": "{volume}% {icon}",
         "format-muted": "",

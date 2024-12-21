@@ -16,6 +16,7 @@ PKGS=(
     slurp
     # Others
     waybar
+    hyprpaper
 )
 
 echo "Installing fonts"

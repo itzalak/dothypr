@@ -51,3 +51,12 @@ tasks:
         vars:
           REQUIRED_TOOLS: pacman
       - "{{.ROOT_DIR}}/taskfiles/scripts/02-bt-wireless.sh"
+
+  yay:
+    desc: Install yay
+    platforms: [linux]
+    cmds:
+      - task: assert
+        vars:
+          REQUIRED_TOOLS: pacman
+      - "{{.ROOT_DIR}}/taskfiles/scripts/04-yay.sh"

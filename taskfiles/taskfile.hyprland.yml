@@ -32,7 +32,8 @@ tasks:
       - task: assert
         vars:
           REQUIRED_TOOLS: pacman
-      - "{{.ROOT_DIR}}/taskfiles/scripts/04-hyprland.sh"
+      - "{{.ROOT_DIR}}/taskfiles/scripts/05-hyprland.sh"
+      - "{{.ROOT_DIR}}/taskfiles/scripts/06-hypr-yay.sh"
 
   stow:
     deps: [assert]

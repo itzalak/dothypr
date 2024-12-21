@@ -20,7 +20,7 @@ PKGS=(
   zoxide
 )
 
-echo "Installing shell related packages"
+echo "Installing terminal related packages"
 
 for PKG in "${PKGS[@]}"; do
   echo "Installing package: $PKG"

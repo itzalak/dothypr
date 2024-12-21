@@ -34,6 +34,15 @@ tasks:
           REQUIRED_TOOLS: pacman
       - "{{.ROOT_DIR}}/taskfiles/scripts/00-minimal-setup.sh"
 
+  desktop:
+    desc: Desktop installation
+    platforms: [linux]
+    cmds:
+      - task: assert
+        vars:
+          REQUIRED_TOOLS: pacman
+      - "{{.ROOT_DIR}}/taskfiles/scripts/01-desktop.sh"
+
   bluetooth:
     desc: Install bluetooth and wireless packages
     platforms: [linux]

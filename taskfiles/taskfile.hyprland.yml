@@ -1,0 +1,55 @@
+version: '3'
+
+tasks:
+
+  default:
+    internal: true
+    desc: Default
+    cmds:
+      - |
+        echo "Working dir: {{.USER_WORKING_DIR}}"
+        echo "OS: {{OS}}"
+        task --list
+    silent: true
+
+  assert:
+    cmds:
+      - for:
+          var: REQUIRED_TOOLS
+          split: ','
+          as: TOOL
+        cmd: |
+          [ -n "$(which {{ .TOOL }})" ] || ( \
+            echo "ERROR: `{{ .TOOL }}` not found" && exit 1; \
+          )
+    silent: true
+    internal: true
+
+  hyprland:
+    desc: Base installation
+    platforms: [linux]
+    cmds:
+      - task: assert
+        vars:
+          REQUIRED_TOOLS: pacman
+      - "{{.ROOT_DIR}}/taskfiles/scripts/04-hyprland.sh"
+
+  stow:
+    deps: [assert]
+    desc: Symlink hyprland packages 
+    cmds:
+      - task: assert
+        vars:
+          REQUIRED_TOOLS: stow
+      - "rm -rf {{.HOME}}/.config/hypr"
+      - "stow --restow --verbose --dir={{.ROOT_DIR}} --target={{.HOME}} hyprland"
+
+
+  destow:
+    deps: [assert]
+    desc: Delete hyprland packages
+    cmds:
+      - task: assert
+        vars:
+          REQUIRED_TOOLS: stow
+      - "stow --delete --verbose --dir={{.ROOT_DIR}} --target={{.HOME}} hyprland"

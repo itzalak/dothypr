@@ -5,6 +5,7 @@ includes:
   terminal: ./taskfiles/taskfile.terminal.yml
   submodule_neovim: ./taskfiles/taskfile.submodule.neovim.yml
   neovim: ./taskfiles/taskfile.neovim.yml
+  hypr: ./taskfiles/taskfile.hyprland.yml
 
 tasks:
 

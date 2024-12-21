@@ -10,6 +10,7 @@ PKGS=(
 	bat
 	curl
 	fd
+    fish
 	firefox
 	fzf
 	git
@@ -18,13 +19,13 @@ PKGS=(
 	man-pages
 	neovim
 	openssh
-	ranger
 	ripgrep
 	starship
 	stow
 	wget
 	wezterm
 	xclip
+    yazi
 	zsh
 )
 

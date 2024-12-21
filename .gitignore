@@ -139,3 +139,6 @@ poetry.toml
 
 # LSP config files
 pyrightconfig.json
+
+# fish
+/terminal/.config/fish/fish_variables

@@ -1,0 +1,71 @@
+version: '3'
+
+tasks:
+
+  default:
+    internal: true
+    desc: Default
+    cmds:
+      - |
+        echo "Working dir: {{.USER_WORKING_DIR}}"
+        echo "OS: {{OS}}"
+        task --list
+    silent: true
+
+  assert:
+    cmds:
+      - for:
+          var: REQUIRED_TOOLS
+          split: ','
+          as: TOOL
+        cmd: |
+          [ -n "$(which {{ .TOOL }})" ] || ( \
+            echo "ERROR: `{{ .TOOL }}` not found" && exit 1; \
+          )
+    silent: true
+    internal: true
+    vars:
+      REQUIRED_TOOLS: bash, stow, pacman
+
+  setup:
+    deps: [assert]
+    desc: Setup terminal and shell
+    cmds:
+      - task: minimal
+      - task: fonts
+      - task: cleanup
+      - task: stow
+
+  minimal:
+    deps: [assert]
+    desc: Install terminal and shell dependencies
+    cmds:
+      - "{{.ROOT_DIR}}/taskfiles/scripts/03-terminal.sh"
+
+  cleanup:
+    desc: Delete existent shell configuration
+    cmds:
+      - rm -rf {{.HOME}}/.bashrc
+      - rm -rf {{.HOME}}/.bash_profile
+      - rm -rf {{.HOME}}/.bash_logout
+      - rm -rf {{.HOME}}/.config/fish
+      - rm -rf {{.HOME}}/.zshrc
+
+  fonts:
+    deps: [assert]
+    desc: Install fonts
+    cmds:
+      - "{{.ROOT_DIR}}/taskfiles/scripts/04-fonts.sh"
+
+  stow:
+    deps: [assert]
+    desc: Symlink terminal and shell configuration
+    cmds:
+      - "stow --restow --verbose --dir={{.ROOT_DIR}} --target={{.HOME}} terminal"
+
+  destow:
+    deps: [assert]
+    desc: Un-symlink terminal and shell configurations
+    cmds:
+      - "stow --delete --verbose --dir={{.ROOT_DIR}} --target={{.HOME}} terminal"
+

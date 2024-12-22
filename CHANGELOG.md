@@ -1,3 +1,9 @@
+## v0.1.5 (2024-12-22)
+
+### Changed
+
+- start nvidia trials
+
 ## v0.1.4 (2024-12-21)
 
 ### Changed

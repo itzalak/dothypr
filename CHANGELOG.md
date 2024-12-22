@@ -1,3 +1,9 @@
+## v0.1.8 (2024-12-22)
+
+### Changed
+
+- wezterm does not work on wayland
+
 ## v0.1.7 (2024-12-22)
 
 ### Changed

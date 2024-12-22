@@ -6,6 +6,8 @@ includes:
   submodule_neovim: ./taskfiles/taskfile.submodule.neovim.yml
   neovim: ./taskfiles/taskfile.neovim.yml
   hypr: ./taskfiles/taskfile.hyprland.yml
+  python: ./taskfiles/taskfile.python.yml
+  sdkman: ./taskfiles/taskfile.sdkman.yml
 
 tasks:
 

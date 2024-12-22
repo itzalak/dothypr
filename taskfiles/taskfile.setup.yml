@@ -60,3 +60,13 @@ tasks:
         vars:
           REQUIRED_TOOLS: pacman
       - "{{.ROOT_DIR}}/taskfiles/scripts/04-yay.sh"
+
+  nvidia:
+    desc: Install nvidia
+    platforms: [linux]
+    prompt: ARE YOU SURE YOU WANT TO INSTALL NVIDIA DRIVERS - manual steps needed!
+    cmds:
+      - task: assert
+        vars:
+          REQUIRED_TOOLS: pacman
+      - "{{.ROOT_DIR}}/taskfiles/scripts/10-nvidia.sh"

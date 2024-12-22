@@ -1,3 +1,16 @@
+## v0.1.6 (2024-12-22)
+
+### Changed
+
+- Add developer tools installation, apply pre commit suggestions
+- Add python and sdkman installation
+- try fuzzel instead of wofi
+- introduce clipboard and correct installation scripts
+
+### Tools
+
+- update neovim
+
 ## v0.1.5 (2024-12-22)
 
 ### Changed

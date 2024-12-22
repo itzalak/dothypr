@@ -17,13 +17,14 @@ PKGS=(
     # Others
     waybar
     hyprpaper
+    cliphist
 )
 
-echo "Installing fonts"
+echo "Installing packages"
 
 for PKG in "${PKGS[@]}"; do
     echo "Installing package: $PKG"
     sudo pacman -S "$PKG" --noconfirm --needed
 done
 
-echo "Fonts installed"
+echo "Packages installed"

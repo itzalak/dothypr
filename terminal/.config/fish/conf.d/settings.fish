@@ -16,11 +16,13 @@ end
 
 switch (uname)
     case Linux
-        set CLIPBOARD_CMD "xclip -selection clipboard"
+        # For xclip (X11)
+        # set CLIPBOARD_CMD "xclip -selection clipboard"
+        # For wayland
+        set CLIPBOARD_CMD wl-copy
     case Darwin
-        set CLIPBOARD_CMD "pbcopy"
+        set CLIPBOARD_CMD pbcopy
     case '*'
         echo "Unsupported OS: (uname)"
         exit 1
 end
-

@@ -3,7 +3,10 @@
 # Determine the clipboard command based on the operating system
 case "$(uname)" in
 Linux*)
-  CLIPBOARD_CMD="xclip -selection clipboard"
+  # For X11
+  # CLIPBOARD_CMD="xclip -selection clipboard"
+  # For wayland
+  CLIPBOARD_CMD="wl-copy"
   ;;
 Darwin*)
   CLIPBOARD_CMD="pbcopy"

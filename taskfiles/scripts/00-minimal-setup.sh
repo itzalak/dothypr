@@ -24,7 +24,6 @@ PKGS=(
 	stow
 	wget
 	wezterm
-	xclip
     yazi
 	zsh
 )

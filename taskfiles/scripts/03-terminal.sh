@@ -12,7 +12,6 @@ PKGS=(
   ripgrep
   stow
   zsh
-  xclip
   fish
   wezterm
   bash-completion

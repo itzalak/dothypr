@@ -23,7 +23,6 @@ PKGS=(
 	starship
 	stow
 	wget
-	wezterm
 	yazi
 	zsh
 )

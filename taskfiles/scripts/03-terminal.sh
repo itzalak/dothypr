@@ -13,7 +13,6 @@ PKGS=(
 	stow
 	zsh
 	fish
-	wezterm
 	bash-completion
 	starship
 	zoxide

@@ -41,7 +41,7 @@ tasks:
   deinit_neovim:
     deps: [assert]
     desc: Remove neovim submodule
-    prompt: ARE YOU SURE YOU WANT TO REMOVE THE SUBMODULES
+    prompt: ARE YOU SURE YOU WANT TO REMOVE THE NVIM SUBMODULE
     cmds:
       - "{{.DEINIT}} {{.LOCAL_PATH}}/nvim"
       - "rm -rf {{.ROOT_DIR}}/.git/modules/{{.LOCAL_PATH}}/nvim"
@@ -50,7 +50,7 @@ tasks:
   add_neovim:
     deps: [assert]
     desc: Add neovim git submodule
-    prompt: ARE YOU SURE YOU WANT TO ADD THE SUBMODULE
+    prompt: ARE YOU SURE YOU WANT TO ADD THE NVIM SUBMODULE
     cmds:
       - "mkdir -p {{.ROOT_DIR}}/{{.LOCAL_PATH}}"
       - "{{.ADD}} git@github.com:itzalak/nvim.git {{.LOCAL_PATH}}/nvim"

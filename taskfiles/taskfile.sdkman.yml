@@ -29,7 +29,16 @@ tasks:
     silent: true
     internal: true
 
+  sdkman:
+    internal: true
+    desc: Install SDKMAN packages
+    prompt: DO YOU WANT TO INSTALL SDKMAN AND JVM PACKAGES
+    cmds:
+      - task: installation
+      - task: install_packages
+
   install_packages:
+    internal: true
     desc: Install SDKMAN packages
     prompt: DO YOU WANT TO INSTALL JVM PACKAGES
     preconditions:
@@ -43,7 +52,8 @@ tasks:
       - "{{.SOURCE_CMD}} && sdk install gradle'"
     silence: true
 
-  install_extra:
+  install_sdk_extra_packages:
+    internal: true
     desc: Install SDKMAN packages
     prompt: DO YOU WANT TO INSTALL EXTRA JVM PACKAGES
     preconditions:
@@ -64,10 +74,12 @@ tasks:
     cmds:
       - "{{.SOURCE_CMD}} && sdk selfupdate force'"
 
-  install_sdkman:
+  installation:
+    internal: true
     desc: Install SDKMAN if not already installed
+    prompt: DO YOU WANT TO INSTALL SDKMAN
     status:
-      - which sdk
+      - which sdk || true
     cmds:
       - task: assert
         vars:

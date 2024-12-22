@@ -31,9 +31,20 @@ tasks:
     cmds:
       - task: assert
         vars:
+          REQUIRED_TOOLS: pacman, stow
+      - task: installation
+      - task: stow
+
+  installation:
+    internal: true
+    desc: Hyprland installation
+    platforms: [linux]
+    cmds:
+      - task: assert
+        vars:
           REQUIRED_TOOLS: pacman
-      - "{{.ROOT_DIR}}/taskfiles/scripts/05-hyprland.sh"
-      - "{{.ROOT_DIR}}/taskfiles/scripts/06-hypr-yay.sh"
+      - "{{.ROOT_DIR}}/taskfiles/scripts/50-hyprland.sh"
+      - "{{.ROOT_DIR}}/taskfiles/scripts/51-hypr-yay.sh"
 
   stow:
     deps: [assert]

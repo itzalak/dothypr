@@ -26,14 +26,16 @@ tasks:
     internal: true
 
   python:
+    internal: true
     desc: Pynvim and pipx installation
     cmds:
-      - task: minimal
+      - task: installation
       - task: pipx
       - task: pyenv
     silent: true
 
-  minimal:
+  installation:
+    internal: true
     desc: Minimal installation of python related packages with pacman
     platforms: [linux]
     cmds:
@@ -52,6 +54,7 @@ tasks:
       - "{{.ROOT_DIR}}/taskfiles/scripts/21-pipx.sh"
 
   pyenv:
+    internal: true
     desc: Install python through pyenv
     cmds:
       - task: assert

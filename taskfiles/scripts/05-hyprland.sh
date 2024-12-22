@@ -18,6 +18,7 @@ PKGS=(
     waybar
     hyprpaper
     cliphist
+    fuzzel
 )
 
 echo "Installing packages"

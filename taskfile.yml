@@ -41,17 +41,17 @@ tasks:
     deps: [assert]
     desc: Set up poetry and pre-commit
     cmds:
-      - task: precommit-setup
-      - task: poetry-setup
+      - task: precommit_setup
+      - task: poetry_setup
 
   update:
     deps: [assert]
     desc: Update poetry and pre-commit
     cmds:
-      - task: poetry-update
+      - task: poetry_update
       - pre-commit autoupdate
 
-  precommit-setup:
+  precommit_setup:
     internal: true
     deps: [assert]
     desc: Initialize pre-commit
@@ -59,14 +59,7 @@ tasks:
       - pre-commit install
       - pre-commit autoupdate
 
-  precommit-run:
-    aliases: [run]
-    deps: [assert]
-    desc: Run pre-commit on all files
-    cmds:
-      - pre-commit run --color always --all-files
-
-  poetry-setup:
+  poetry_setup:
     internal: true
     deps: [assert]
     desc: Poetry local setup and install
@@ -76,16 +69,30 @@ tasks:
       - poetry install
       - poetry env info --path
 
-  poetry-update:
+  poetry_update:
+    internal: true
     deps: [assert]
     desc: Update poetry dependencies
     cmds:
       - poetry update
       - poetry self update
 
-  poetry-test:
-    aliases: [test]
+  run:
+    aliases: [pre_commit_run]
     deps: [assert]
-    desc: Run tests using poetry (documentation)
+    desc: Run pre-commit on all files
+    cmds:
+      - pre-commit run --color always --all-files
+
+  poetry:
+    deps: [assert]
+    desc: Refresh poetry environment
+    cmds:
+      - poetry install
+
+  test:
+    aliases: [poetry_test]
+    deps: [assert]
+    desc: Run tests using poetry
     cmds:
       - poetry run pytest

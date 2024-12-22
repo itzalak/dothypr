@@ -50,6 +50,7 @@ tasks:
 
 
   desktop:
+    internal: true
     desc: Desktop installation
     platforms: [linux]
     cmds:
@@ -59,6 +60,7 @@ tasks:
       - "{{.ROOT_DIR}}/taskfiles/scripts/01-desktop.sh"
 
   bluetooth:
+    internal: true
     desc: Install bluetooth and wireless packages
     platforms: [linux]
     cmds:
@@ -90,6 +92,7 @@ tasks:
       - "{{.ROOT_DIR}}/taskfiles/scripts/10-nvidia.sh"
 
   development:
+    internal: true
     desc: Install development packages
     platforms: [linux]
     cmds:

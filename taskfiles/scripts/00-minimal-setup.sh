@@ -10,7 +10,7 @@ PKGS=(
 	bat
 	curl
 	fd
-    fish
+	fish
 	firefox
 	fzf
 	git
@@ -24,7 +24,7 @@ PKGS=(
 	stow
 	wget
 	wezterm
-    yazi
+	yazi
 	zsh
 )
 

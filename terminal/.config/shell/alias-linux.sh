@@ -1,5 +1,5 @@
 #!/bin/bash
 
 if [[ $(uname) == "Linux" ]]; then
-  alias t='go-task'
+	alias t='go-task'
 fi

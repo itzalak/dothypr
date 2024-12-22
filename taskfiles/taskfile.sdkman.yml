@@ -52,7 +52,7 @@ tasks:
     cmds:
       - "{{.SOURCE_CMD}} && sdk install java 11.0.24-tem'"
       - "{{.SOURCE_CMD}} && sdk install java 17.0.12-tem'"
-      - "{{.SOURCE_CMD}} && sdk install java 22.0.2-tem'"
+      - "{{.SOURCE_CMD}} && sdk install java 23.0.1-tem'"
       - "{{.SOURCE_CMD}} && sdk install scala'"
     silence: true
 

@@ -68,4 +68,3 @@ tasks:
     desc: Un-symlink terminal and shell configurations
     cmds:
       - "stow --delete --verbose --dir={{.ROOT_DIR}} --target={{.HOME}} terminal"
-

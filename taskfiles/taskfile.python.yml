@@ -43,7 +43,6 @@ tasks:
       - "{{.ROOT_DIR}}/taskfiles/scripts/20-python.sh"
 
   pipx:
-    deps: [assert]
     internal: true
     desc: Install pipx packages of poetry and commitizen
     cmds:

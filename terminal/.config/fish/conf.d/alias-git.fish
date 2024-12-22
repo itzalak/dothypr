@@ -19,4 +19,3 @@ alias gsu='git stash -u -m'
 alias gpr='git pull --rebase -v'
 alias glb='git branch -vv'
 alias gub='git branch -vv --no-merged'
-

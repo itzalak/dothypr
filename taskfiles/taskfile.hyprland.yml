@@ -37,7 +37,7 @@ tasks:
 
   stow:
     deps: [assert]
-    desc: Symlink hyprland packages 
+    desc: Symlink hyprland packages
     cmds:
       - task: assert
         vars:

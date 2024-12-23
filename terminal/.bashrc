@@ -32,6 +32,7 @@ done
 eval "$(zoxide init bash)"
 
 # Starship
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init bash)"
 
 export PYENV_ROOT="$HOME/.pyenv"

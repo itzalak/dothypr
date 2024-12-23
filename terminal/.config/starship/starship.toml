@@ -1,0 +1,160 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = false
+command_timeout = 20000
+
+# prompt
+# https://starship.rs/config/#prompt
+
+format = """
+[╭─](red)[](red)\
+[󰥔 ](bg:red fg:yellow)\
+[](bg:0 fg:red)\
+[](bg:red fg:0)\
+[ ](bg:0 fg:red)\
+$time\
+$cmd_duration\
+\n\
+[├─](red)[](red)\
+[󰉋 ](bg:red fg:yellow)\
+[](bg:0 fg:red)\
+[](bg:red fg:0)\
+[ ](bg:0 fg:red)\
+$directory\
+$git_branch\
+$git_status\
+$kubernetes\
+$vcsh\
+$fossil_branch\
+$fossil_metrics\
+$hg_branch\
+$pijul_channel\
+$docker_context\
+$package\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$gleam\
+$golang\
+$guix_shell\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$gradle\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$quarto\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$solidity\
+$swift\
+$terraform\
+$typst\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$nats\
+$direnv\
+$env_var\
+$crystal\
+$custom\
+$sudo\
+$jobs\
+$status\
+$container\
+$line_break\
+[╰─](red)[](red)\
+[󰢛 ](fg:yellow bg:red)\
+[](bg:0 fg:red)\
+[](bg:red fg:0)\
+[ ](bg:0 fg:red)\
+$shell\
+$character
+"""
+
+[fill]
+symbol = " "
+
+[directory]
+read_only = "󰌾 "
+read_only_style = "red"
+style = "fg:yellow bg:0"
+format = "[$read_only]($read_only_style)[$path ]($style)"
+truncation_length = 4
+
+[git_branch]
+format = '[ $symbol  $branch ]($style)'
+symbol = "󰊤"
+
+[git_status]
+style = "fg:red bg:0"
+format = '([\[ $all_status$ahead_behind\]]($style) )'
+conflicted = " "
+ahead = "[ ](fg:green)"
+behind = ""
+staged = "[ ](fg:green)"
+modified = "[󰏫 ](fg:yellow)"
+renamed = "[󰓹 ](fg:yellow)"
+deleted = "󰆴 "
+untracked = "[󰈔 ](fg:yellow)"
+stashed = "[󰀼 ](fg:yellow)"
+diverged = " "
+
+
+[time]
+disabled = false
+time_format = "%R"
+style = "fg:yellow bg:0"
+format = '[$time ]($style)'
+
+[cmd_duration]
+format = "[ took $duration ]($style)"
+style = "fg:yellow bg:0"
+
+[shell]
+unknown_indicator = 'unknown shell'
+format = "[$indicator ]($style)"
+style = "fg:yellow bg:0"
+disabled = false
+
+[character]
+format = "$symbol"
+success_symbol = "[ ](2)"
+error_symbol = "[ ](red) "
+vicmd_symbol = "[ ](yellow)"
+disabled = false

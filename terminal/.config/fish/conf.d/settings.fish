@@ -16,10 +16,13 @@ end
 
 switch (uname)
     case Linux
-        # For xclip (X11)
-        # set CLIPBOARD_CMD "xclip -selection clipboard"
-        # For wayland
-        set CLIPBOARD_CMD wl-copy
+        if type -q wl-copy
+            # Wayland
+            set CLIPBOARD_CMD wl-copy
+        else if type -q xclip
+            # X11
+             set CLIPBOARD_CMD "xclip -selection clipboard"
+        end
     case Darwin
         set CLIPBOARD_CMD pbcopy
     case '*'

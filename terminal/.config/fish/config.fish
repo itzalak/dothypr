@@ -3,8 +3,11 @@ if status is-interactive
 end
 
 set -g -x fish_greeting ''
+
+# Enable starship config
 set --universal --export STARSHIP_CONFIG "$HOME/.config/starship/starship.toml"
 
+# Python, pip and pyenv
 fish_add_path --prepend "$HOME/.local/bin"
 if test -d "$HOME/.pyenv"
     set --universal --export PYENV_ROOT $HOME/.pyenv
@@ -12,6 +15,7 @@ if test -d "$HOME/.pyenv"
      pyenv init - | source
 end
 
+# Java, kotlin, gradle, maven, groovy, etc
 if test -d "$HOME/.sdkman"
     set --universal --export SDKMAN_DIR "$HOME/.sdkman"
     if set -q SDKMAN_DIR; and not test -f "$SDKMAN_DIR/bin/sdkman-init.sh"

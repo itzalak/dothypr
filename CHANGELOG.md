@@ -1,3 +1,9 @@
+## v0.1.10 (2024-12-23)
+
+### Changed
+
+- introduce kitty configuration
+
 ## v0.1.9 (2024-12-23)
 
 ### Changed

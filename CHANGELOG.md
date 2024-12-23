@@ -1,3 +1,11 @@
+## v0.1.9 (2024-12-23)
+
+### Changed
+
+- introduce starship configuration
+- Add alacritty initial config
+- cleanup shell files
+
 ## v0.1.8 (2024-12-22)
 
 ### Changed

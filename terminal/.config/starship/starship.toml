@@ -133,7 +133,7 @@ renamed = "[󰓹 ](fg:yellow)"
 deleted = "󰆴 "
 untracked = "[󰈔 ](fg:yellow)"
 stashed = "[󰀼 ](fg:yellow)"
-diverged = " "
+diverged = " "
 
 
 [time]

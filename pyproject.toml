@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dothypr"
-version = "0.1.10"
+version = "0.1.11"
 description = "Personal laboratory for experimental archlinux hyprland dotfiles"
 authors = ["Itzalak <itzalak@tuta.io>"]
 license = ""
@@ -28,7 +28,7 @@ build-backend = "poetry.core.masonry.api"
 name = "cz_customize"
 tag_format = "v$major.$minor.$patch"
 version_scheme = "semver"
-version = "0.1.10"
+version = "0.1.11"
 update_changelog_on_bump = true
 version_files = ["pyproject.toml"]
 

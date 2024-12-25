@@ -11,9 +11,9 @@ command_timeout = 20000
 format = """
 [╭─](red)[](red)\
 [󰥔 ](bg:red fg:yellow)\
-[](bg:0 fg:red)\
-[](bg:red fg:0)\
-[ ](bg:0 fg:red)\
+[](bg:black fg:red)\
+[](bg:red fg:black)\
+[ ](fg:red)\
 $time\
 $cmd_duration\
 \n\
@@ -21,7 +21,7 @@ $cmd_duration\
 [󰉋 ](bg:red fg:yellow)\
 [](bg:0 fg:red)\
 [](bg:red fg:0)\
-[ ](bg:0 fg:red)\
+[ ](fg:red)\
 $directory\
 $git_branch\
 $git_status\
@@ -100,9 +100,9 @@ $container\
 $line_break\
 [╰─](red)[](red)\
 [󰢛 ](fg:yellow bg:red)\
-[](bg:0 fg:red)\
-[](bg:red fg:0)\
-[ ](bg:0 fg:red)\
+[](bg:black fg:red)\
+[](bg:red fg:black)\
+[ ](fg:red)\
 $shell\
 $character
 """
@@ -113,7 +113,7 @@ symbol = " "
 [directory]
 read_only = "󰌾 "
 read_only_style = "red"
-style = "fg:yellow bg:0"
+style = "fg:yellow"
 format = "[$read_only]($read_only_style)[$path ]($style)"
 truncation_length = 4
 
@@ -122,7 +122,7 @@ format = '[ $symbol  $branch ]($style)'
 symbol = "󰊤"
 
 [git_status]
-style = "fg:red bg:0"
+style = "fg:red"
 format = '([\[ $all_status$ahead_behind\]]($style) )'
 conflicted = " "
 ahead = "[ ](fg:green)"
@@ -139,22 +139,22 @@ diverged = " "
 [time]
 disabled = false
 time_format = "%R"
-style = "fg:yellow bg:0"
+style = "fg:yellow"
 format = '[$time ]($style)'
 
 [cmd_duration]
 format = "[ took $duration ]($style)"
-style = "fg:yellow bg:0"
+style = "fg:yellow"
 
 [shell]
 unknown_indicator = 'unknown shell'
 format = "[$indicator ]($style)"
-style = "fg:yellow bg:0"
+style = "fg:yellow"
 disabled = false
 
 [character]
 format = "$symbol"
-success_symbol = "[ ](2)"
+success_symbol = "[ ](green)"
 error_symbol = "[ ](red) "
-vicmd_symbol = "[ ](yellow)"
+vimcmd_symbol = "[ ](yellow)"
 disabled = false

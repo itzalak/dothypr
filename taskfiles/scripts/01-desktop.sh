@@ -3,7 +3,6 @@
 set -uo pipefail
 
 PKGS=(
-	nano
 	vim
 	openssh
 	htop
@@ -21,20 +20,6 @@ PKGS=(
 	gst-plugin-pipewire
 	libpulse
 	wireplumber
-	# hardware
-	# AMD
-	mesa
-	xf86-video-amdgpu
-	xf86-video-ati
-	libva-mesa-driver
-	vulkan-radeon
-	# Nvidia
-	# dkms
-	# nvidia-open
-	# nvidia-open-dkms
-	# nvidia-utils
-	# lib32-nvidia-utils
-	# egl-wayland
 )
 
 echo "Installing packages"

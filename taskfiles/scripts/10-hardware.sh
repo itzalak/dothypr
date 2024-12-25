@@ -3,12 +3,17 @@
 set -uo pipefail
 
 PKGS=(
+	# AMD
+	mesa
+	xf86-video-amdgpu
+	xf86-video-ati
+	libva-mesa-driver
+	vulkan-radeon
 	# Nvidia
-	# https://wiki.hyprland.org/Nvidia/
 	dkms
 	nvidia-open
-	nvidia-open-dkms
 	nvidia-utils
+	nvidia-settings
 	lib32-nvidia-utils
 	egl-wayland
 )
@@ -19,5 +24,3 @@ for PKG in "${PKGS[@]}"; do
 	echo "Installing package: $PKG"
 	sudo pacman -S "$PKG" --noconfirm --needed
 done
-
-echo "Manual steps required for successfull installation. please update mkinitcpio and modprobe"

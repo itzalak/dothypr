@@ -81,15 +81,15 @@ tasks:
           REQUIRED_TOOLS: pacman
       - "{{.ROOT_DIR}}/taskfiles/scripts/05-yay.sh"
 
-  nvidia:
-    desc: Install nvidia
+  hardware:
+    desc: Install nvidia and amd drivers
     platforms: [linux]
-    prompt: ARE YOU SURE YOU WANT TO INSTALL NVIDIA DRIVERS - manual steps needed, RTD!
+    prompt: ARE YOU SURE YOU WANT TO INSTALL CPU and GPU DRIVERS
     cmds:
       - task: assert
         vars:
           REQUIRED_TOOLS: pacman
-      - "{{.ROOT_DIR}}/taskfiles/scripts/10-nvidia.sh"
+      - "{{.ROOT_DIR}}/taskfiles/scripts/10-hardware.sh"
 
   development:
     internal: true

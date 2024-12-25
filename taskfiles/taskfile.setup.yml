@@ -100,3 +100,12 @@ tasks:
         vars:
           REQUIRED_TOOLS: pacman, python, java, pyenv
       - "{{.ROOT_DIR}}/taskfiles/scripts/22-development.sh"
+
+  productivity:
+    desc: Install productivity packages
+    platforms: [linux]
+    cmds:
+      - task: assert
+        vars:
+          REQUIRED_TOOLS: pacman, python, java, pyenv
+      - "{{.ROOT_DIR}}/taskfiles/scripts/25-productivity.sh"

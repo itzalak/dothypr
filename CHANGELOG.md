@@ -1,3 +1,9 @@
+## v0.1.13 (2024-12-25)
+
+### Changed
+
+- modifications for keybindings after RTD
+
 ## v0.1.12 (2024-12-25)
 
 ### Changed

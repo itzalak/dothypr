@@ -1,3 +1,10 @@
+## v0.1.12 (2024-12-25)
+
+### Changed
+
+- split and tweak hyprland
+- adjust hardware installation
+
 ## v0.1.11 (2024-12-24)
 
 ### Changed

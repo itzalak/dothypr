@@ -15,6 +15,9 @@ PKGS=(
 	pycharm-community-edition
 
 	# Misc
+	git-extras
+	tree
+	seahorse
 	cargo
 	npm
 	jq

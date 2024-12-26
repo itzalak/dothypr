@@ -1,3 +1,12 @@
+## v0.1.14 (2024-12-26)
+
+### Changed
+
+- include gaming installation, try hyprsunset
+- correct starship prompt config
+- add some more tools to installation script
+- introduce productivity tools
+
 ## v0.1.13 (2024-12-25)
 
 ### Changed

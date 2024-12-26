@@ -3,11 +3,11 @@
 set -uo pipefail
 
 PKGS=(
-	hyprland-qtutils
-	hyprsunset
+	steam
+	minecraft-launcher
 )
 
-echo "Installing hypr AUR packages"
+echo "Installing packages"
 
 for PKG in "${PKGS[@]}"; do
 	echo "Installing package: $PKG"

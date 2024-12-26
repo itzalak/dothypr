@@ -107,5 +107,14 @@ tasks:
     cmds:
       - task: assert
         vars:
-          REQUIRED_TOOLS: pacman, python, java, pyenv
+          REQUIRED_TOOLS: pacman, java, python
       - "{{.ROOT_DIR}}/taskfiles/scripts/25-productivity.sh"
+
+  games:
+    desc: Install games packages
+    platforms: [linux]
+    cmds:
+      - task: assert
+        vars:
+          REQUIRED_TOOLS: pacman, java
+      - "{{.ROOT_DIR}}/taskfiles/scripts/30-games.sh"

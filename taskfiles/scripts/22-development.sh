@@ -18,6 +18,7 @@ PKGS=(
 	git-extras
 	tree
 	seahorse
+	gnome-keyring
 	cargo
 	npm
 	jq

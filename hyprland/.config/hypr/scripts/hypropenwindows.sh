@@ -1,0 +1,16 @@
+#!/bin/bash
+
+openwindows=$(
+	hyprctl clients -j |
+		jq -r '.[] | "[\(.workspace.id)] [\(.class)] \(.title) \(.address)"' |
+		sort |
+		fuzzel --dmenu |
+		awk '{print $NF}'
+)
+
+if [ "$openwindows" = "" ]; then
+	exit
+fi
+
+# Focus on the selected window
+hyprctl dispatch focuswindow "address:${openwindows}"

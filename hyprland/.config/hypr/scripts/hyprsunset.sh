@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if pgrep -x "hyprsunset" >/dev/null; then
 	killall hyprsunset

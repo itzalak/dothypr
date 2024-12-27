@@ -24,7 +24,6 @@ PKGS=(
 	jq
 	shellcheck
 	yq
-	markdownlint-cli2
 )
 
 echo "Installing required packages for development"

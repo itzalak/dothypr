@@ -5,6 +5,7 @@ set -uo pipefail
 PKGS=(
 	hyprland-qtutils
 	hyprsunset
+	bemoji
 )
 
 echo "Installing hypr AUR packages"

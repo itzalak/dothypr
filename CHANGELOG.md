@@ -1,3 +1,16 @@
+## v0.1.15 (2024-12-27)
+
+### Changed
+
+- tweak waybar config
+- add btm and brightness control
+- add script to switch to open window
+- add emoji selector
+- update to latest nvim config
+- Scratchpad and minimize windows
+- More bind updates, move screenshot to script
+- Tweak resize keybinds
+
 ## v0.1.14 (2024-12-26)
 
 ### Changed

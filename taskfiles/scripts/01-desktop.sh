@@ -12,6 +12,8 @@ PKGS=(
 	wpa_supplicant
 	smartmontools
 	xdg-utils
+	brightnessctl
+	bottom
 	# https://wiki.archlinux.org/title/PipeWire
 	pipewire
 	pipewire-alsa

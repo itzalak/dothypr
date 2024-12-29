@@ -8,7 +8,7 @@ openwindows=$(
 		awk '{print $NF}'
 )
 
-if [ "$openwindows" = "" ]; then
+if [[ -z $openwindows ]]; then
 	exit
 fi
 

@@ -22,6 +22,8 @@ PKGS=(
 	gst-plugin-pipewire
 	libpulse
 	wireplumber
+	helvum
+	pavucontrol
 )
 
 echo "Installing packages"

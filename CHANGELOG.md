@@ -1,3 +1,9 @@
+## v0.1.16 (2024-12-29)
+
+### Changed
+
+- adjust waybar to my workflow
+
 ## v0.1.15 (2024-12-27)
 
 ### Changed

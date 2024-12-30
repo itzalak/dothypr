@@ -1,7 +1,7 @@
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Iosevka, sans-serif;
-    font-size: 13px;
+    font-family: 'Iosevka Nerd Font', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 window#waybar {
@@ -32,8 +32,11 @@ button:hover {
 
 #workspaces button {
     padding: 0 5px;
-    background-color: transparent;
+    background-color: green;
     color: #ffffff;
+}
+#workspaces  button.hosting-monitor {
+  background-color:blue;
 }
 
 #workspaces button:hover {
@@ -47,6 +50,11 @@ button:hover {
 
 #workspaces button.urgent {
     background-color: #eb4d4b;
+}
+
+ /*order matters for special  */
+#workspaces button.special {
+  background-color:yellow;
 }
 
 #mode {

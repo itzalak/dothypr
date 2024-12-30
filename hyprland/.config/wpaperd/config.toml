@@ -1,0 +1,10 @@
+[default]
+duration = "20m"
+mode = "center"
+sorting = "ascending"
+transition-time = 6000
+
+[any]
+path = "~/foundry/dothypr/wallpapers"
+
+[default.transition.fade]

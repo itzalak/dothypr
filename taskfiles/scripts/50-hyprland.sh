@@ -16,7 +16,7 @@ PKGS=(
 	slurp
 	# Others
 	waybar
-	hyprpaper
+	wpaperd
 	cliphist
 	fuzzel
 )

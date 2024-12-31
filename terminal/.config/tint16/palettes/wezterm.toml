@@ -1,0 +1,37 @@
+# Tint16 generated palette
+# Theme: "laubwald-spring"
+# Author: "Itzalak"
+
+[colors]
+ansi = [
+    '#224029',
+    '#e14433',
+    '#a2bc3c',
+    '#ec984d',
+    '#3c8cbf',
+    '#bb9af6',
+    '#3b9586',
+    '#90c99b',
+]
+background = '#152719'
+brights = [
+    '#3a6243',
+    '#f36552',
+    '#b7d348',
+    '#f7b37c',
+    '#4fa1d7',
+    '#cdb6f9',
+    '#47ac9b',
+    '#e6f6e8',
+]
+cursor_bg = '#e6f6e8'
+cursor_border = '#e6f6e8'
+cursor_fg = '#224029'
+foreground = '#ccedd1'
+selection_bg = '#e6f6e8'
+selection_fg = '#3b9586'
+
+[colors.indexed]
+
+[metadata]
+name = 'Wezterm'

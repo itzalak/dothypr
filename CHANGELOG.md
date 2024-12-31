@@ -1,3 +1,13 @@
+## v0.1.17 (2024-12-31)
+
+### Changed
+
+- start new version of decorator
+- more cleanup on waybar config
+- tweak special workspace bindings
+- update neovim
+- replace hyprpaper for wpaperd
+
 ## v0.1.16 (2024-12-29)
 
 ### Changed

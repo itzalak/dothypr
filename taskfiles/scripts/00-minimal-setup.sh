@@ -13,6 +13,7 @@ PKGS=(
 	fish
 	firefox
 	fzf
+	ghostty
 	git
 	go-task
 	man-db

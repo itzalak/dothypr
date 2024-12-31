@@ -4,80 +4,60 @@
   font-size: 14px;
 }
 
+/*TODO: can I default if not present to not fail on loading?*/
 @import "../tint16/palettes/waybar.css";
 
+/*Bar settings*/
 window#waybar {
   background-color: transparent;
+}
+
+tooltip {
+  background: @background;
+  border: 1px solid @foreground;
   color: @foreground;
-  transition-property: background-color;
-  transition-duration: 0.5s;
 }
 
-window#waybar.hidden {
-  opacity: 0.2;
-}
-
+/*Button settings*/
 button {
-  /* Use box-shadow instead of border so the text isn't offset */
   box-shadow: inset 0 -3px transparent;
-  /* Avoid rounded borders under each button name */
   border: none;
   border-radius: 0;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
-  background: inherit;
   box-shadow: inset 0 -3px @foreground;
 }
 
+/*Workspace button settings*/
+/*order matters, last one is applied in case of conflict*/
+/*e.g. hover only applies on special if after special*/
+/*or needs to override all fields*/
 #workspaces button {
-  padding: 0 5px;
   background-color: @background;
   color: @foreground;
 }
+
 #workspaces button.hosting-monitor {
   background-color: @color8;
-}
-
-#workspaces button:hover {
-  /*TODO*/
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#workspaces button.focused {
-  background-color: @color2;
-  box-shadow: inset 0 -3px @foreground;
 }
 
 #workspaces button.urgent {
   background-color: @color3;
 }
 
-/*order matters for special  */
 #workspaces button.special {
   color: @background;
   background-color: @color5;
 }
 
-#mode {
-  background-color: @color8;
-  box-shadow: inset 0 -3px @foreground;
-}
-
-#clock,
-#battery,
-#wireplumber,
-#tray,
-#mode,
-#scratchpad {
-  padding: 0 10px;
+#workspaces button:hover {
+  background: @color0;
   color: @foreground;
 }
 
-#window,
-#workspaces {
-  margin: 0 4px;
+#workspaces button.active {
+  box-shadow: inset 0 -3px @color3;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -85,13 +65,35 @@ button:hover {
   margin-left: 0;
 }
 
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-  margin-right: 0;
+/*Submap settings*/
+#submap {
+  background-color: @color12;
+  box-shadow: inset 0 -3px @foreground;
+  padding: 0 10px;
+}
+
+/*Animations*/
+@keyframes blink {
+  to {
+    background-color: @foreground;
+    color: @background;
+  }
+}
+
+/*Module settings*/
+#clock,
+#battery,
+#wireplumber,
+#temperature,
+#privacy,
+#tray {
+  padding: 0 10px;
+  color: @background;
 }
 
 #clock {
   background-color: @color8;
+  color: @foreground;
 }
 
 #battery {
@@ -102,14 +104,7 @@ button:hover {
 #battery.charging,
 #battery.plugged {
   color: @foreground;
-  background-color: @color14;
-}
-
-@keyframes blink {
-  to {
-    background-color: @foreground;
-    color: @background;
-  }
+  background-color: @color12;
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
@@ -123,10 +118,6 @@ button:hover {
   animation-direction: alternate;
 }
 
-label:focus {
-  background-color: @background;
-}
-
 #wireplumber {
   background-color: @background;
   color: @foreground;
@@ -134,12 +125,10 @@ label:focus {
 
 #wireplumber.muted {
   color: @background;
-  background-color: @color1;
+  background-color: @color3;
 }
 
 #temperature {
-  padding: 0 10px;
-  color: @background;
   background-color: @foreground;
 }
 
@@ -160,14 +149,8 @@ label:focus {
   background-color: @color1;
 }
 
+#bluetooth,
 #idle_inhibitor {
-  /* Icons are not aligned requires special padding */
-  padding: 0 13px 0 10px;
-  color: @foreground;
-  background-color: @color8;
-}
-
-#bluetooth {
   /* Icons are not aligned requires special padding */
   padding: 0 13px 0 10px;
   color: @foreground;
@@ -185,26 +168,18 @@ label:focus {
 #idle_inhibitor.activated,
 #network.disconnected {
   color: @background;
-  background-color: @color1;
-}
-
-#privacy {
-  padding: 0;
+  background-color: @color3;
 }
 
 #privacy-item {
   padding: 0 5px;
-  color: @foreground;
+  color: @background;
 }
 
 #privacy-item.screenshare {
-  background-color: @color1;
+  background-color: @color5;
 }
 
 #privacy-item.audio-in {
-  background-color: @color3;
-}
-
-#privacy-item.audio-out {
-  background-color: @color3;
+  background-color: @color5;
 }

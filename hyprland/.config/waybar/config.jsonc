@@ -1,15 +1,17 @@
 // -*- mode: jsonc -*-
 {
-    "height": 30,
+    "height": 32,
     "spacing": 4,
     "reload_style_on_change": true,
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/submap"
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/submap",
+        "privacy"
     ],
     "modules-right": [
         "idle_inhibitor",
-        "privacy",
         "wireplumber",
         "temperature",
         "bluetooth",
@@ -23,10 +25,9 @@
         "show-special": true
     },
     "hyprland/submap": {
-        /* WIP: I don't understand submaps yet */
-        "format": "😆 {}",
-        "max-length": 8,
-        "tooltip": true
+        "format": "🎱 {}",
+        "tooltip": true,
+        "on-click": "hyprctl dispatch submap reset"
     },
     "wireplumber": {
         "format": "{icon} {volume}%",
@@ -102,19 +103,15 @@
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
     },
     "privacy": {
-        "icon-spacing": 4,
-        "icon-size": 18,
         "transition-duration": 250,
         "modules": [
             {
                 "type": "screenshare",
-                "tooltip": true,
-                "tooltip-icon-size": 24
+                "tooltip": true
             },
             {
                 "type": "audio-in",
-                "tooltip": true,
-                "tooltip-icon-size": 24
+                "tooltip": true
             }
         ]
     }

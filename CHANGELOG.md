@@ -1,3 +1,11 @@
+## v0.1.18 (2024-12-31)
+
+### Changed
+
+- Apply tint colorscheme to waybar
+- add ghostty
+- tweak yay installation
+
 ## v0.1.17 (2024-12-31)
 
 ### Changed

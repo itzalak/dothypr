@@ -32,14 +32,14 @@
     },
     "wireplumber": {
         "format": "{icon} {volume}%",
-        "format-muted": "",
-        "on-click": "helvum",
-        "on-click-right": "pavucontrol",
-        "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "format-muted": "󰖁",
+        "on-click": "pavucontrol",
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-middle": "helvum",
         "format-icons": [
-            "",
-            "",
-            ""
+            "󰕿",
+            "󰖀",
+            "󰕾"
         ]
     },
     "idle_inhibitor": {
@@ -95,7 +95,6 @@
     },
     "bluetooth": {
         "format": "󰂯 {status}",
-        /* maybe setup a script to connect or disconnect bluetooth */
         "format-disabled": "󰂲",
         "format-off": "󰂲",
         "format-connected": "󰂯 {num_connections}",

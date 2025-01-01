@@ -1,7 +1,8 @@
 // -*- mode: jsonc -*-
 {
-    "height": 32,
+    "height": 40,
     "spacing": 4,
+    "margin": "15 15 0 15",
     "reload_style_on_change": true,
     "modules-left": [
         "hyprland/workspaces"
@@ -25,7 +26,7 @@
         "show-special": true
     },
     "hyprland/submap": {
-        "format": "🎱 {}",
+        "format": "  {}",
         "tooltip": true,
         "on-click": "hyprctl dispatch submap reset"
     },
@@ -111,6 +112,10 @@
             },
             {
                 "type": "audio-in",
+                "tooltip": true
+            },
+            {
+                "type": "audio-out",
                 "tooltip": true
             }
         ]

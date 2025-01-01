@@ -1,40 +1,40 @@
 !# Tint16 generated palette
-!# Theme: "laubwald-spring"
+!# Theme: "laubwald-night"
 !# Author: "Itzalak"
 
 ! special
-*.foreground:   #ccedd1
-*.background:   #152719
-*.cursorColor:  #ccedd1
+*.foreground:   #dce6dd
+*.background:   #060a07
+*.cursorColor:  #dce6dd
 
 ! black
-*.color0:       #224029
-*.color8: 		#3a6243
+*.color0:       #1d251e
+*.color8: 		#475749
 
 ! red
-*.color1: 		#e14433
-*.color9: 		#f36552
+*.color1: 		#d65342
+*.color9: 		#e96e5d
 
 ! green
-*.color2: 		#a2bc3c
-*.color10:		#b7d348
+*.color2: 		#43985a
+*.color10:		#4fb069
 
 ! yellow
-*.color3: 		#ec984d
-*.color11:		#f7b37c
+*.color3: 		#b9941a
+*.color11:		#d2a920
 
 ! blue
-*.color4: 		#3c8cbf
-*.color12:		#4fa1d7
+*.color4: 		#2d8cc5
+*.color12:		#41a2df
 
 ! magenta
-*.color5: 		#bb9af6
-*.color13:		#cdb6f9
+*.color5: 		#985fe6
+*.color13:		#aa7cf1
 
 ! cyan
-*.color6: 		#3b9586
-*.color14:		#47ac9b
+*.color6: 		#2993a3
+*.color14:		#32aabc
 
 ! white
-*.color7: 		#90c99b
-*.color15:		#e6f6e8
+*.color7: 		#abbfae
+*.color15:		#edf2ee

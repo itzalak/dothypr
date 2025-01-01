@@ -1,3 +1,17 @@
+## v0.1.19 (2025-01-01)
+
+### Changed
+
+- add some wallpapers
+- add updated submaps
+- add night theme and experiment
+- wrap waybar configurations
+- update waybar config again
+- sync cursor themes for tint
+- add transparency to gostty
+- try out special workspaces for specific applications
+- continue waybar updates
+
 ## v0.1.18 (2024-12-31)
 
 ### Changed

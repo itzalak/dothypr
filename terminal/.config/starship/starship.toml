@@ -9,19 +9,19 @@ command_timeout = 20000
 # https://starship.rs/config/#prompt
 
 format = """
-[╭─](red)[](red)\
-[󰥔 ](bg:red fg:yellow)\
-[](bg:black fg:red)\
-[](bg:red fg:black)\
-[ ](fg:red)\
+[╭─](black)[](black)\
+[󰥔 ](bg:black fg:yellow)\
+[](bg:yellow fg:black)\
+[](bg:black fg:yellow)\
+[ ](fg:black)\
 $time\
 $cmd_duration\
 \n\
-[├─](red)[](red)\
-[󰉋 ](bg:red fg:yellow)\
-[](bg:0 fg:red)\
-[](bg:red fg:0)\
-[ ](fg:red)\
+[├─](black)[](black)\
+[󰉋 ](bg:black fg:yellow)\
+[](bg:yellow fg:black)\
+[](bg:black fg:yellow)\
+[ ](fg:black)\
 $directory\
 $git_branch\
 $git_status\
@@ -98,11 +98,11 @@ $jobs\
 $status\
 $container\
 $line_break\
-[╰─](red)[](red)\
-[󰢛 ](fg:yellow bg:red)\
-[](bg:black fg:red)\
-[](bg:red fg:black)\
-[ ](fg:red)\
+[╰─](black)[](black)\
+[󰢛 ](fg:yellow bg:black)\
+[](bg:yellow fg:black)\
+[](bg:black fg:yellow)\
+[ ](fg:black)\
 $shell\
 $character
 """

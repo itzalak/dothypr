@@ -1,3 +1,11 @@
+## v0.1.20 (2025-01-01)
+
+### Changed
+
+- tweak yazi
+- tweak starship promtp
+- more ghostty config
+
 ## v0.1.19 (2025-01-01)
 
 ### Changed

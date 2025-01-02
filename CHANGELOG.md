@@ -1,3 +1,19 @@
+## v0.1.21 (2025-01-02)
+
+### Changed
+
+- Add hyprland to tint, modify hypr appearence
+- introduce hex value to tint16
+- add lazygit to installation
+- improve yazi config
+- add color palette to fuzzel
+- update terminal installation script
+
+### Fixed
+
+- find command in history function for fish
+- correct ghostty font
+
 ## v0.1.20 (2025-01-01)
 
 ### Changed

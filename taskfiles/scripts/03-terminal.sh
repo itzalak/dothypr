@@ -13,6 +13,7 @@ PKGS=(
 	kitty
 	man-db
 	man-pages
+	p7zip
 	ripgrep
 	starship
 	stow

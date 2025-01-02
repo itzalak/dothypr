@@ -24,6 +24,7 @@ PKGS=(
 	jq
 	shellcheck
 	yq
+	lazygit
 )
 
 echo "Installing required packages for development"

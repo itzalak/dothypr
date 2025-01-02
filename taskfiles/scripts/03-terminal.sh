@@ -4,18 +4,21 @@ set -uo pipefail
 
 PKGS=(
 	alacritty
+	bash-completion
 	bat
 	fd
+	fish
 	fzf
+	ghostty
+	kitty
 	man-db
 	man-pages
 	ripgrep
-	stow
-	zsh
-	fish
-	bash-completion
 	starship
+	stow
+	yazi
 	zoxide
+	zsh
 )
 
 echo "Installing terminal related packages"

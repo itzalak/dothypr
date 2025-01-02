@@ -1,5 +1,5 @@
-font-style = "Iosevka Nerd Font"
-font-size = 14
+font-family = "IosevkaTerm Nerd Font"
+font-size = 16
 
 window-padding-x = 10
 window-padding-y = 10

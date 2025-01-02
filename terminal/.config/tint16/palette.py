@@ -27,6 +27,20 @@ class Palette:
             "background": self.background,
             "foreground": self.foreground,
             **{f"color{i}": color for i, color in enumerate(self.colors)},
+            **{
+                f"color{i}_value": color[1:] if color.startswith("#") else color
+                for i, color in enumerate(self.colors)
+            },
+            "background_value": (
+                self.background[1:]
+                if self.background.startswith("#")
+                else self.background
+            ),
+            "foreground_value": (
+                self.foreground[1:]
+                if self.foreground.startswith("#")
+                else self.foreground
+            ),
         }
 
     @staticmethod

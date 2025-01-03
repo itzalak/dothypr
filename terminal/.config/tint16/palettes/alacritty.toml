@@ -1,30 +1,30 @@
 # Tint16 generated palette
-# Theme: "laubwald-night"
+# Theme: "basoa-summer"
 # Author: "Itzalak"
 
 [colors.primary]
 # Default colors
-background = "#060a07"
-foreground = "#dce6dd"
+background = "#092a13"
+foreground = "#e2f6a6"
 
 # Normal colors
 [colors.normal]
-black = "#1d251e"
-red = "#d65342"
-green = "#43985a"
-yellow = "#b9941a"
-blue = "#2d8cc5"
-magenta = "#985fe6"
-cyan = "#2993a3"
-white = "#abbfae"
+black = "#353f0e"
+red = "#e14433"
+green = "#5cb200"
+yellow = "#ebbe2f"
+blue = "#56b8f7"
+magenta = "#bd97fc"
+cyan = "#27c3d9"
+white = "#b9d64a"
 
 # Bright colors
 [colors.bright]
-black = "#475749"
-red = "#e96e5d"
-green = "#4fb069"
-yellow = "#d2a920"
-blue = "#41a2df"
-magenta = "#aa7cf1"
-cyan = "#32aabc"
-white = "#edf2ee"
+black = "#637321"
+red = "#f36552"
+green = "#6aca00"
+yellow = "#fbd66e"
+blue = "#89cdfc"
+magenta = "#ceb5fd"
+cyan = "#42daf1"
+white = "#f3fbdf"

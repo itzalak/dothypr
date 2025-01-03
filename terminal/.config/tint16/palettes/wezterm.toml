@@ -1,35 +1,35 @@
 # Tint16 generated palette
-# Theme: "laubwald-night"
+# Theme: "basoa-summer"
 # Author: "Itzalak"
 
 [colors]
 ansi = [
-    '#1d251e',
-    '#d65342',
-    '#43985a',
-    '#b9941a',
-    '#2d8cc5',
-    '#985fe6',
-    '#2993a3',
-    '#abbfae',
+    '#353f0e',
+    '#e14433',
+    '#5cb200',
+    '#ebbe2f',
+    '#56b8f7',
+    '#bd97fc',
+    '#27c3d9',
+    '#b9d64a',
 ]
 brights = [
-    '#475749',
-    '#e96e5d',
-    '#4fb069',
-    '#d2a920',
-    '#41a2df',
-    '#aa7cf1',
-    '#32aabc',
-    '#edf2ee',
+    '#637321',
+    '#f36552',
+    '#6aca00',
+    '#fbd66e',
+    '#89cdfc',
+    '#ceb5fd',
+    '#42daf1',
+    '#f3fbdf',
 ]
-cursor_border = '#edf2ee'
-cursor_bg = '#1d251e'
-cursor_fg = '#475749'
-background = '#060a07'
-foreground = '#dce6dd'
-selection_bg = '#475749'
-selection_fg = '#dce6dd'
+cursor_border = '#f3fbdf'
+cursor_bg = '#353f0e'
+cursor_fg = '#637321'
+background = '#092a13'
+foreground = '#e2f6a6'
+selection_bg = '#637321'
+selection_fg = '#e2f6a6'
 
 [colors.indexed]
 

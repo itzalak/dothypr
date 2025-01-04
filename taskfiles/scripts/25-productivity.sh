@@ -3,6 +3,7 @@
 set -uo pipefail
 
 PKGS=(
+	calibre
 	obsidian
 	vivaldi
 	slack-desktop-wayland

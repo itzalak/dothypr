@@ -6,7 +6,6 @@ PKGS=(
 	hyprland
 	dunst
 	kitty
-	dolphin
 	wofi
 	xdg-desktop-portal-hyprland
 	qt5-wayland
@@ -14,11 +13,19 @@ PKGS=(
 	polkit-kde-agent
 	grim
 	slurp
+	# Thunar
+	# https://wiki.archlinux.org/title/Thunar
+	thunar
+	thunar-archive-plugin
+	thunar-volman
+	tumbler
+	gvfs
 	# Others
 	waybar
 	wpaperd
 	cliphist
 	fuzzel
+	nwg-look
 )
 
 echo "Installing packages"

@@ -14,7 +14,9 @@ PKGS=(
 	man-db
 	man-pages
 	p7zip
+	poppler
 	ripgrep
+	ripgrep-all
 	starship
 	stow
 	yazi

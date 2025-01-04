@@ -1,3 +1,15 @@
+## v0.1.22 (2025-01-04)
+
+### Changed
+
+- Replace dolphin by thunar
+- update neovim
+- tryout basoa colorscheme
+
+### Fixed
+
+- error on fuzzel config
+
 ## v0.1.21 (2025-01-02)
 
 ### Changed

@@ -1,3 +1,9 @@
+## v0.1.23 (2025-01-04)
+
+### Changed
+
+- Tweak hypr config
+
 ## v0.1.22 (2025-01-04)
 
 ### Changed

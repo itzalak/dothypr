@@ -1,3 +1,16 @@
+## v0.1.25 (2025-01-06)
+
+### Changed
+
+- tweak config
+- tweak installation files
+- poetry update broke the package, comment for now, I have no time for this
+
+### Fixed
+
+- correct installation scripts for hyprland
+- TODO again the which command does not work as intended on taskfiles
+
 ## v0.1.24 (2025-01-06)
 
 ### Changed

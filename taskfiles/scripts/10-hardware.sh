@@ -4,14 +4,14 @@ set -uo pipefail
 
 PKGS=(
 	# AMD
-	mesa
-	xf86-video-amdgpu
-	xf86-video-ati
-	libva-mesa-driver
-	vulkan-radeon
+	# mesa
+	# xf86-video-amdgpu
+	# xf86-video-ati
+	# libva-mesa-driver
+	# vulkan-radeon
 	# Nvidia
 	dkms
-	nvidia-open
+	nvidia-open-dkms
 	nvidia-utils
 	nvidia-settings
 	lib32-nvidia-utils

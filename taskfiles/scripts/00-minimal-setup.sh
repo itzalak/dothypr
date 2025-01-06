@@ -21,11 +21,14 @@ PKGS=(
 	neovim
 	openssh
 	ripgrep
+	ripgrep-all
 	starship
 	stow
 	wget
 	yazi
 	zsh
+	thunar
+	gvfs
 )
 
 for PKG in "${PKGS[@]}"; do

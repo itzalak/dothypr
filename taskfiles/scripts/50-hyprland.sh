@@ -6,7 +6,6 @@ PKGS=(
 	hyprland
 	dunst
 	kitty
-	wofi
 	xdg-desktop-portal-hyprland
 	xdg-desktop-portal-gtk
 	qt5-wayland

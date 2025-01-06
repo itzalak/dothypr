@@ -55,6 +55,7 @@ tasks:
           REQUIRED_TOOLS: stow
       - "rm -rf {{.HOME}}/.config/hypr"
       - "rm -rf {{.HOME}}/.config/Thunar"
+      - "mkdir -p {{.HOME}}/.local/share/applications"
       - "stow --restow --verbose --dir={{.ROOT_DIR}} --target={{.HOME}} hyprland"
 
 

@@ -90,7 +90,6 @@ tasks:
       - "{{.ROOT_DIR}}/taskfiles/scripts/10-hardware.sh"
 
   development:
-    internal: true
     desc: Install development packages
     platforms: [linux]
     cmds:

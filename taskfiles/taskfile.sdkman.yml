@@ -30,7 +30,6 @@ tasks:
     internal: true
 
   sdkman:
-    internal: true
     desc: Install SDKMAN packages
     prompt: DO YOU WANT TO INSTALL SDKMAN AND JVM PACKAGES
     cmds:
@@ -78,8 +77,6 @@ tasks:
     internal: true
     desc: Install SDKMAN if not already installed
     prompt: DO YOU WANT TO INSTALL SDKMAN
-    status:
-      - which sdk || true
     cmds:
       - task: assert
         vars:

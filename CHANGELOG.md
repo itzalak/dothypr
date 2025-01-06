@@ -1,3 +1,10 @@
+## v0.1.24 (2025-01-06)
+
+### Changed
+
+- Try to fix steam and electron apps, not successful
+- Replace impala, add bluetui
+
 ## v0.1.23 (2025-01-04)
 
 ### Changed

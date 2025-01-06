@@ -43,8 +43,8 @@ tasks:
       - task: bluetooth
       - task: :terminal:terminal
       - task: :neovim:neovim
-      - task: :python:python
-      - task: :sdkman:sdkman
+      # - task: :python:python
+      # - task: :sdkman:sdkman
       - task: yay
       - echo "hyprland should be run after this script"
 
@@ -73,8 +73,6 @@ tasks:
     desc: Install yay
     prompt: ARE YOU SURE YOU WANT TO INSTALL YAY
     platforms: [linux]
-    status:
-      - which yay || true
     cmds:
       - task: assert
         vars:

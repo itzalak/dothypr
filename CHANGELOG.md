@@ -1,3 +1,9 @@
+## v0.1.28 (2025-01-07)
+
+### Fixed
+
+- fix pyproject and cleanup pre commit config
+
 ## v0.1.27 (2025-01-06)
 
 ### Changed

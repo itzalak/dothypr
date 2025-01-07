@@ -1,3 +1,9 @@
+## v0.1.30 (2025-01-07)
+
+### Fixed
+
+- refresh poetry environment before running tests
+
 ## v0.1.29 (2025-01-07)
 
 ### Fixed

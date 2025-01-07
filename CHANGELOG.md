@@ -1,3 +1,9 @@
+## v0.1.31 (2025-01-07)
+
+### Changed
+
+- update starship config
+
 ## v0.1.30 (2025-01-07)
 
 ### Fixed

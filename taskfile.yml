@@ -75,7 +75,6 @@ tasks:
     desc: Update poetry dependencies
     cmds:
       - poetry update
-      - poetry self update
 
   run:
     aliases: [pre_commit_run]

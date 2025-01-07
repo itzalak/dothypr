@@ -1,3 +1,9 @@
+## v0.1.29 (2025-01-07)
+
+### Fixed
+
+- poetry should not self update
+
 ## v0.1.28 (2025-01-07)
 
 ### Fixed

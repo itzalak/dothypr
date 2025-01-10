@@ -1,3 +1,23 @@
+## v0.1.32 (2025-01-10)
+
+### Changed
+
+- tidy up scripts and ghostty config
+- update starship config
+- thunar config
+- nvim update
+- tweak config
+- tweak installation files
+- poetry update broke the package, comment for now, I have no time for this
+
+### Fixed
+
+- refresh poetry environment before running tests
+- poetry should not self update
+- fix pyproject and cleanup pre commit config
+- correct installation scripts for hyprland
+- TODO again the which command does not work as intended on taskfiles
+
 ## v0.1.31 (2025-01-07)
 
 ### Changed

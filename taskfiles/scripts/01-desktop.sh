@@ -4,12 +4,6 @@ set -uo pipefail
 
 PKGS=(
 	vim
-	openssh
-	htop
-	wget
-	iwd
-	wireless_tools
-	wpa_supplicant
 	smartmontools
 	xdg-utils
 	brightnessctl
@@ -24,6 +18,16 @@ PKGS=(
 	wireplumber
 	helvum
 	pavucontrol
+	# https://wiki.archlinux.org/title/Bluetooth
+	bluez
+	bluez-utils
+	bluez-hid2hci
+	bluetui
+	# https://wiki.archlinux.org/title/Iwd
+	iwd
+	wireless_tools
+	wpa_supplicant
+	networkmanager
 )
 
 echo "Installing packages"
@@ -32,3 +36,8 @@ for PKG in "${PKGS[@]}"; do
 	echo "Installing package: $PKG"
 	sudo pacman -S "$PKG" --noconfirm --needed
 done
+
+echo "Setting wireless and bluetooth services"
+
+sudo systemctl enable --now bluetooth.service
+sudo systemctl enable --now NetworkManager

@@ -10,12 +10,14 @@ PKGS=(
 	bat
 	curl
 	fd
-	fish
 	firefox
+	fish
 	fzf
 	ghostty
 	git
 	go-task
+	gvfs
+	iwd
 	man-db
 	man-pages
 	neovim
@@ -24,11 +26,9 @@ PKGS=(
 	ripgrep-all
 	starship
 	stow
+	thunar
 	wget
 	yazi
-	zsh
-	thunar
-	gvfs
 )
 
 for PKG in "${PKGS[@]}"; do

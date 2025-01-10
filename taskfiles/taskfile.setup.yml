@@ -51,23 +51,13 @@ tasks:
 
   desktop:
     internal: true
-    desc: Desktop installation
+    desc: Desktop installation, wireless, bluetooth, sound, etc...
     platforms: [linux]
     cmds:
       - task: assert
         vars:
           REQUIRED_TOOLS: pacman
       - "{{.ROOT_DIR}}/taskfiles/scripts/01-desktop.sh"
-
-  bluetooth:
-    internal: true
-    desc: Install bluetooth and wireless packages
-    platforms: [linux]
-    cmds:
-      - task: assert
-        vars:
-          REQUIRED_TOOLS: pacman
-      - "{{.ROOT_DIR}}/taskfiles/scripts/02-bt-wireless.sh"
 
   yay:
     desc: Install yay

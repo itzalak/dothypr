@@ -42,7 +42,7 @@ tasks:
     deps: [assert]
     desc: Install terminal and shell dependencies
     cmds:
-      - "{{.ROOT_DIR}}/taskfiles/scripts/03-terminal.sh"
+      - "{{.ROOT_DIR}}/taskfiles/scripts/02-terminal.sh"
 
   cleanup:
     internal: true

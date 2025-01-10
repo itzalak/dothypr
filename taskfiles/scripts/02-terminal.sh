@@ -10,7 +10,6 @@ PKGS=(
 	fish
 	fzf
 	ghostty
-	kitty
 	man-db
 	man-pages
 	p7zip
@@ -22,6 +21,15 @@ PKGS=(
 	yazi
 	zoxide
 	zsh
+	# Fonts
+	noto-fonts
+	noto-fonts-emoji
+	ttf-fira-code
+	ttf-firacode-nerd
+	ttf-iosevka-nerd
+	ttf-iosevkaterm-nerd
+	ttf-nerd-fonts-symbols
+	ttf-zed-mono-nerd
 )
 
 echo "Installing terminal related packages"

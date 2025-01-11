@@ -33,7 +33,6 @@ tasks:
     desc: Setup terminal and shell
     cmds:
       - task: installation
-      - task: fonts
       - task: cleanup
       - task: stow
 
@@ -53,13 +52,6 @@ tasks:
       - rm -rf {{.HOME}}/.bash_logout
       - rm -rf {{.HOME}}/.config/fish
       - rm -rf {{.HOME}}/.zshrc
-
-  fonts:
-    internal: true
-    deps: [assert]
-    desc: Install fonts
-    cmds:
-      - "{{.ROOT_DIR}}/taskfiles/scripts/04-fonts.sh"
 
   stow:
     deps: [assert]

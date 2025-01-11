@@ -28,6 +28,15 @@ PKGS=(
 	wireless_tools
 	wpa_supplicant
 	networkmanager
+	# https://wiki.archlinux.org/title/Thunar
+	thunar
+	thunar-archive-plugin
+	thunar-volman
+	tumbler
+	gvfs
+	# https://wiki.archlinux.org/title/GNOME/Keyring#Manage_using_GUI
+	seahorse
+	gnome-keyring
 )
 
 echo "Installing packages"

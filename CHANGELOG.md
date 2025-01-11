@@ -1,3 +1,9 @@
+## v0.1.34 (2025-01-11)
+
+### Changed
+
+- update installation files, start gnome installation
+
 ## v0.1.33 (2025-01-11)
 
 ### Changed

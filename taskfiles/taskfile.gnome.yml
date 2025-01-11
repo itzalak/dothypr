@@ -25,7 +25,7 @@ tasks:
     silent: true
     internal: true
 
-  hyprland:
+  gnome:
     desc: Base installation
     platforms: [linux]
     cmds:
@@ -33,35 +33,32 @@ tasks:
         vars:
           REQUIRED_TOOLS: pacman, stow
       - task: installation
-      - task: stow
+        # - task: stow
 
   installation:
     internal: true
-    desc: Hyprland installation
+    desc: gnome installation
     platforms: [linux]
     cmds:
       - task: assert
         vars:
           REQUIRED_TOOLS: pacman
-      - "{{.ROOT_DIR}}/taskfiles/scripts/50-hyprland.sh"
-      - "{{.ROOT_DIR}}/taskfiles/scripts/51-hypr-yay.sh"
-
-  stow:
-    desc: Symlink hyprland packages
-    cmds:
-      - task: assert
-        vars:
-          REQUIRED_TOOLS: stow
-      - "rm -rf {{.HOME}}/.config/hypr"
-      - "rm -rf {{.HOME}}/.config/Thunar"
-      - "mkdir -p {{.HOME}}/.local/share/applications"
-      - "stow --restow --verbose --dir={{.ROOT_DIR}} --target={{.HOME}} hyprland"
-
-
-  destow:
-    desc: Delete hyprland packages
-    cmds:
-      - task: assert
-        vars:
-          REQUIRED_TOOLS: stow
-      - "stow --delete --verbose --dir={{.ROOT_DIR}} --target={{.HOME}} hyprland"
+      - "{{.ROOT_DIR}}/taskfiles/scripts/50-gnome.sh"
+  #
+  # stow:
+  #   desc: Symlink gnome packages
+  #   cmds:
+  #     - task: assert
+  #       vars:
+  #         REQUIRED_TOOLS: stow
+  #     - "rm -rf {{.HOME}}/.config/Thunar"
+  #     - "stow --restow --verbose --dir={{.ROOT_DIR}} --target={{.HOME}} gnome"
+  #
+  #
+  # destow:
+  #   desc: Delete gnome packages
+  #   cmds:
+  #     - task: assert
+  #       vars:
+  #         REQUIRED_TOOLS: stow
+  #     - "stow --delete --verbose --dir={{.ROOT_DIR}} --target={{.HOME}} gnome"

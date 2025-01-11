@@ -1,3 +1,9 @@
+## v0.1.33 (2025-01-11)
+
+### Changed
+
+- try to fix electron apps
+
 ## v0.1.32 (2025-01-10)
 
 ### Changed

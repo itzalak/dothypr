@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# This scrip is designed to work when plugged to HDMI, but can be improved
+# to use the make and or model of the monitor to account for usage outside
+# the home workspace
+
 killactive() {
 	if pgrep -x "waybar" >/dev/null; then
 		killall waybar

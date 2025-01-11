@@ -1,3 +1,9 @@
+## v0.1.35 (2025-01-11)
+
+### Changed
+
+- gnome taskfile
+
 ## v0.1.34 (2025-01-11)
 
 ### Changed

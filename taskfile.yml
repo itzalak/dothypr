@@ -8,6 +8,7 @@ includes:
   hypr: ./taskfiles/taskfile.hyprland.yml
   python: ./taskfiles/taskfile.python.yml
   sdkman: ./taskfiles/taskfile.sdkman.yml
+  gnome: ./taskfiles/taskfile.gnome.yml
 
 tasks:
 

@@ -1,3 +1,9 @@
+## v0.1.36 (2025-01-12)
+
+### Changed
+
+- add gnome to taskfile
+
 ## v0.1.35 (2025-01-11)
 
 ### Changed

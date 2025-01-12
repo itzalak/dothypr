@@ -1,3 +1,9 @@
+## v0.1.37 (2025-01-12)
+
+### Changed
+
+- try to not use nvidia
+
 ## v0.1.36 (2025-01-12)
 
 ### Changed

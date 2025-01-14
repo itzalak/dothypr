@@ -1,0 +1,64 @@
+version: '3'
+
+# TODO: Does not make sense to have so this taskfile just for thunar
+# waiting to see if there are any more "common" linux configs
+
+tasks:
+
+  default:
+    internal: true
+    desc: Default
+    cmds:
+      - |
+        echo "Working dir: {{.USER_WORKING_DIR}}"
+        echo "OS: {{OS}}"
+        task --list
+    silent: true
+
+  assert:
+    cmds:
+      - for:
+          var: REQUIRED_TOOLS
+          split: ','
+          as: TOOL
+        cmd: |
+          [ -n "$(which {{ .TOOL }})" ] || ( \
+            echo "ERROR: `{{ .TOOL }}` not found" && exit 1; \
+          )
+    silent: true
+    internal: true
+    vars:
+      REQUIRED_TOOLS: stow, pacman
+
+  thunar:
+    deps: [assert]
+    desc: Setup thunar
+    cmds:
+      - task: cleanup
+      - task: directories
+      - task: stow
+
+  directories:
+    internal: true
+    desc: Create required directories
+    cmds:
+      - mkdir -p {{.HOME}}/.local/share/applications
+
+  cleanup:
+    internal: true
+    desc: Delete existent configuration
+    cmds:
+      - rm -rf {{.HOME}}/.config/Thunar
+      - rm -rf {{.HOME}}/.config/thunar
+
+  stow:
+    deps: [assert]
+    desc: Symlink configuration
+    cmds:
+      - "stow --restow --verbose --dir={{.ROOT_DIR}} --target={{.HOME}} thunar"
+
+  destow:
+    deps: [assert]
+    desc: Delete symlink configurations
+    cmds:
+      - "stow --delete --verbose --dir={{.ROOT_DIR}} --target={{.HOME}} thunar"

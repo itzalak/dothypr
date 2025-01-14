@@ -43,15 +43,6 @@ tasks:
           REQUIRED_TOOLS: pacman
       - "{{.ROOT_DIR}}/taskfiles/scripts/20-python.sh"
 
-  pipx:
-    internal: true
-    desc: Install pipx packages of poetry and commitizen
-    cmds:
-      - task: assert
-        vars:
-          REQUIRED_TOOLS: python, pip
-      - "{{.ROOT_DIR}}/taskfiles/scripts/21-pipx.sh"
-
   pyenv:
     internal: true
     desc: Install python through pyenv

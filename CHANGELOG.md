@@ -1,3 +1,14 @@
+## v0.1.38 (2025-01-14)
+
+### Changed
+
+- another attempt, now gnome first
+- try to not use nvidia
+- add gnome to taskfile
+- gnome taskfile
+- update installation files, start gnome installation
+- try to fix electron apps
+
 ## v0.1.37 (2025-01-12)
 
 ### Changed

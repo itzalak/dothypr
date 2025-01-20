@@ -5,20 +5,15 @@ set -uo pipefail
 PKGS=(
 	# AMD
 	xf86-video-amdgpu
-	mesa
 	mesa-utils
-	lib32-mesa
-	libva-mesa-driver
 	vulkan-radeon
-	lib32-vulkan-radeon
 	# Nvidia
 	dkms
 	nvidia-open-dkms
 	nvidia-utils
-	nvidia-settings
-	lib32-nvidia-utils
-	egl-wayland
+	libvdpau
 	libva-nvidia-driver
+	egl-wayland
 )
 
 echo "Installing packages"
@@ -28,5 +23,26 @@ for PKG in "${PKGS[@]}"; do
 	sudo pacman -S "$PKG" --noconfirm --needed
 done
 
-# Monitor AMD GPU like nvidia-smi
-# yay -S amdgpu_top
+YAYPKGS=(
+	# AMD
+	amdgpu_top
+	# Asus
+	# https://wiki.archlinux.org/title/Asusctl
+	# https://asus-linux.org/manual/asusctl-manual/
+	# https://asus-linux.org/manual/supergfxctl-manual/
+	supergfxctl
+	rog-control-center
+	asusctl
+)
+
+echo "Installing yay packages"
+
+for YPKG in "${YAYPKGS[@]}"; do
+	echo "Installing package: $YPKG"
+	yay -S "$YPKG" --noconfirm --needed
+done
+
+echo "Setting asus services"
+
+sudo systemctl enable --now asusd.service
+sudo systemctl enable --now supergfxd.service

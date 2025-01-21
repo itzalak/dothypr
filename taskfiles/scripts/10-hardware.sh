@@ -33,6 +33,8 @@ YAYPKGS=(
 	supergfxctl
 	rog-control-center
 	asusctl
+	# Other
+	zsa-keymapp-bin
 )
 
 echo "Installing yay packages"

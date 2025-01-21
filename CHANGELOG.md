@@ -1,3 +1,10 @@
+## v0.1.40 (2025-01-21)
+
+### Changed
+
+- more hardware stuff
+- add asusctl to hardware install script
+
 ## v0.1.39 (2025-01-14)
 
 ### Changed
